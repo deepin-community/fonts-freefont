@@ -1,0 +1,33 @@
+Description: Disable obsolete and poorly crafted fontforge version check
+Author: Fabian Greffrath <fabian@debian.org>
+
+--- a/sfd/Makefile
++++ b/sfd/Makefile
+@@ -19,15 +19,15 @@ TESTFF=if test -z ${ffversion}; then ech
+ .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf .woff
+ 
+ %.otf : %.sfd
+-	@ $(TESTFF)
++#	@ $(TESTFF)
+ 	@ ( $(FFPY) ../tools/generate/OpenType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+ 
+ %.ttf : %.sfd
+-	@ $(TESTFF)
++#	@ $(TESTFF)
+ 	@ ( $(FFPY) ../tools/generate/TrueType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+ 
+ %.woff : %.sfd
+-	@ $(TESTFF)
++#	@ $(TESTFF)
+ 	@ ( $(FFPY) ../tools/generate/WOFF $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+ 
+ all: ttf otf woff
+@@ -39,7 +39,7 @@ otf: $(OTFS)
+ woff: $(WOFFS)
+ 
+ tests:
+-	@ $(TESTFF)
++#	@ $(TESTFF)
+ 	@ ( $(FFPY) ../tools/test/isMonoMono.py $(MSFDS) 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
+ 	@ $(FFPY) ../tools/test/checkGlyphNumbers.py `pwd` $(SFDS) 2>&1
+ 	@ $(FFPY) ../tools/test/validate.py 2>&1

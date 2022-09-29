@@ -1,0 +1,25 @@
+Description: fix reversed floorleft and floorright in FreeSans
+ These two glyphs are inverted.
+ .
+ Already fixed in upstream SVN but we won't see a release anytime soon.
+
+--- a/sfd/FreeSans.sfd
++++ b/sfd/FreeSans.sfd
+@@ -49643,7 +49643,7 @@ Validated: 3073
+ EndChar
+ 
+ StartChar: floorleft
+-Encoding: 8970 8970 2380
++Encoding: 8971 8971 2380
+ Width: 456
+ Flags: HMW
+ LayerCount: 2
+@@ -49689,7 +49689,7 @@ Validated: 3073
+ EndChar
+ 
+ StartChar: floorright
+-Encoding: 8971 8971 2383
++Encoding: 8970 8970 2383
+ Width: 455
+ Flags: HMW
+ LayerCount: 2

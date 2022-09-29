@@ -1,0 +1,353 @@
+From: Andrej Shadura <andrewsh@debian.org>
+Date: Thu, 18 Oct 2018 15:26:04 +0200
+Subject: Fix the appearance of the Slovak glyphs
+
+This patch fixes incorrectly drawn carons on Czech and Slovak
+characters.
+
+---
+ sfd/FreeSans.sfd            | 32 +++++++++++++++++++-------------
+ sfd/FreeSansBold.sfd        | 33 +++++++++++++++++++--------------
+ sfd/FreeSansBoldOblique.sfd | 30 ++++++++++++++++++------------
+ sfd/FreeSerif.sfd           | 19 +++++++++++--------
+ sfd/FreeSerifBold.sfd       | 16 +++++++++-------
+ sfd/FreeSerifBoldItalic.sfd | 16 +++++++++-------
+ sfd/FreeSerifItalic.sfd     | 11 +----------
+ 7 files changed, 86 insertions(+), 71 deletions(-)
+
+diff --git a/sfd/FreeSans.sfd b/sfd/FreeSans.sfd
+index c4dde39..1a03763 100644
+--- a/sfd/FreeSans.sfd
++++ b/sfd/FreeSans.sfd
+@@ -4932,14 +4932,16 @@ EndChar
+ 
+ StartChar: dcaron
+ Encoding: 271 271 206
+-Width: 745
++Width: 674
+ Flags: HMW
+ LayerCount: 2
+ Fore
+-Refer: 6147 -1 S 1 0 0 1 540 0 2
+-Refer: 68 100 N 1 0 0 1 0 0 0
++Refer: 494 787 N 1 0 0 1 767 1 0
++Refer: 68 100 N 1 0 0 1 0 0 2
+ Validated: 32769
+-LCarets2: 1 0 
++LCarets2: 1 0
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaaboverightcmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaabovecmb
+ EndChar
+ 
+ StartChar: Dcroat
+@@ -5680,21 +5682,23 @@ Width: 563
+ Flags: HMW
+ LayerCount: 2
+ Fore
+-Refer: 6147 -1 N 1 0 0 1 270 0 2
++Refer: 494 787 S 1 0 0 1 474 -11 2
+ Refer: 44 76 N 1 0 0 1 0 0 0
+ Validated: 32769
+ EndChar
+ 
+ StartChar: lcaron
+ Encoding: 318 318 253
+-Width: 385
++Width: 329
+ Flags: HMW
+ LayerCount: 2
+ Fore
+-Refer: 6147 -1 N 1 0 0 1 180 0 2
+-Refer: 76 108 N 1 0 0 1 0 0 0
++Refer: 494 787 N 1 0 0 1 422 1 0
++Refer: 76 108 N 1 0 0 1 0 0 2
+ Validated: 32769
+-LCarets2: 1 0 
++LCarets2: 1 0
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaaboverightcmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaabovecmb
+ EndChar
+ 
+ StartChar: Ldot
+@@ -6367,14 +6371,16 @@ EndChar
+ 
+ StartChar: tcaron
+ Encoding: 357 357 292
+-Width: 440
++Width: 393
+ Flags: HMW
+ LayerCount: 2
+ Fore
+-Refer: 6147 -1 N 1 0 0 1 230 0 2
+-Refer: 84 116 N 1 0 0 1 0 0 0
++Refer: 494 787 N 1 0 0 1 486 1 0
++Refer: 84 116 N 1 0 0 1 0 0 2
+ Validated: 32769
+-LCarets2: 1 0 
++LCarets2: 1 0
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" t commaaboverightcmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" t commaabovecmb
+ EndChar
+ 
+ StartChar: Tbar
+diff --git a/sfd/FreeSansBold.sfd b/sfd/FreeSansBold.sfd
+index 2243624..eb1cc18 100644
+--- a/sfd/FreeSansBold.sfd
++++ b/sfd/FreeSansBold.sfd
+@@ -5098,14 +5098,15 @@ EndChar
+ 
+ StartChar: dcaron
+ Encoding: 271 271 204
+-Width: 789
+-Flags: HMW
+-AnchorPoint: "below" 279 0 basechar 0
++Width: 778
++Flags: HW
+ LayerCount: 2
+ Fore
+-Refer: 2910 -1 N 1 0 0 1 589 0 2
+-Refer: 68 100 N 1 0 0 1 0 0 0
++Refer: 2048 789 N 1 0 0 1 611 0 2
++Refer: 68 100 N 1 0 0 1 0 0 2
+ Validated: 32769
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaabovecmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaaboverightcmb
+ LCarets2: 1 0 
+ EndChar
+ 
+@@ -5815,20 +5816,22 @@ Width: 619
+ Flags: HMW
+ LayerCount: 2
+ Fore
+-Refer: 2910 -1 N 1 0 0 1 290 0 2
++Refer: 2048 -1 N 1 0 0 1 290 0 2
+ Refer: 44 76 N 1 0 0 1 0 0 0
+ Validated: 32769
+ EndChar
+ 
+ StartChar: lcaron
+ Encoding: 318 318 251
+-Width: 442
+-Flags: HMW
++Width: 427
++Flags: HW
+ LayerCount: 2
+ Fore
+-Refer: 2910 -1 N 1 0 0 1 240 0 2
+-Refer: 76 108 N 1 0 0 1 0 0 0
++Refer: 2048 789 N 1 0 0 1 260 0 2
++Refer: 76 108 N 1 0 0 1 0 0 2
+ Validated: 32769
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaaboverightcmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaabovecmb
+ LCarets2: 1 0 
+ EndChar
+ 
+@@ -6483,13 +6486,15 @@ EndChar
+ 
+ StartChar: tcaron
+ Encoding: 357 357 290
+-Width: 481
+-Flags: HMW
++Width: 494
++Flags: HW
+ LayerCount: 2
+ Fore
+-Refer: 2910 -1 N 1 0 0 1 280 0 2
+-Refer: 84 116 N 1 0 0 1 0 0 0
++Refer: 2048 789 N 1 0 0 1 327 0 2
++Refer: 84 116 N 1 0 0 1 0 0 2
+ Validated: 32769
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" t commaabovecmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" t commaaboverightcmb
+ LCarets2: 1 0 
+ EndChar
+ 
+diff --git a/sfd/FreeSansBoldOblique.sfd b/sfd/FreeSansBoldOblique.sfd
+index 691683e..9d9a8f7 100644
+--- a/sfd/FreeSansBoldOblique.sfd
++++ b/sfd/FreeSansBoldOblique.sfd
+@@ -4797,13 +4797,15 @@ EndChar
+ 
+ StartChar: dcaron
+ Encoding: 271 271 204
+-Width: 755
+-Flags: HMW
++Width: 808
++Flags: HW
+ LayerCount: 2
+ Fore
+-Refer: 339 787 N 1 0 0 1 966 0 2
+ Refer: 68 100 N 1 0 0 1 0 0 2
++Refer: 1346 700 N 1 0 0 1 553 0 2
+ Validated: 32769
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaabovecmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaaboverightcmb
+ LCarets2: 1 0 
+ EndChar
+ 
+@@ -5568,20 +5570,22 @@ Width: 611
+ Flags: HMW
+ LayerCount: 2
+ Fore
+-Refer: 339 787 N 1 0 0 1 736 0 2
++Refer: 1346 700 S 1 0 0 1 273 0 2
+ Refer: 44 76 N 1 0 0 1 0 0 0
+ Validated: 32769
+ EndChar
+ 
+ StartChar: lcaron
+ Encoding: 318 318 251
+-Width: 444
+-Flags: HMW
++Width: 457
++Flags: HW
+ LayerCount: 2
+ Fore
+-Refer: 339 787 S 1 0 0 1 646 0 2
+-Refer: 76 108 N 1 0 0 1 0 0 0
++Refer: 76 108 N 1 0 0 1 0 0 2
++Refer: 1346 700 N 1 0 0 1 202 0 2
+ Validated: 32769
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaabovecmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaaboverightcmb
+ LCarets2: 1 0 
+ EndChar
+ 
+@@ -6196,14 +6200,16 @@ EndChar
+ 
+ StartChar: tcaron
+ Encoding: 357 357 288
+-Width: 444
+-Flags: HMW
+-AnchorPoint: "above" -165 538 mark 0
++Width: 525
++Flags: HW
+ LayerCount: 2
+ Fore
+-Refer: 339 787 S 1 0 0 1 656 0 2
+ Refer: 84 116 N 1 0 0 1 0 0 2
++Refer: 1346 700 N 1 0 0 1 270 0 2
+ Validated: 32769
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" t commaabovecmb
++Ligature2: "'liga' Standard Ligatures in Latin-commaright" t commaaboverightcmb
++LCarets2: 1 0 
+ EndChar
+ 
+ StartChar: Utilde
+diff --git a/sfd/FreeSerif.sfd b/sfd/FreeSerif.sfd
+index 226053d..be3ee01 100644
+--- a/sfd/FreeSerif.sfd
++++ b/sfd/FreeSerif.sfd
+@@ -7628,7 +7628,7 @@ Width: 410
+ Flags: HMW
+ LayerCount: 2
+ Fore
+-Refer: 9647 -1 N 1 0 0 1 225 0 2
++Refer: 9647 -1 S 1 0 0 1 226 -2 2
+ Refer: 84 116 N 1 0 0 1 0 0 2
+ Validated: 1
+ LCarets2: 1 0 
+@@ -326506,13 +326506,16 @@ Flags: HMW
+ LayerCount: 2
+ Fore
+ SplineSet
+-45 471 m 5
+- 10 471 l 5
+- 88 641 l 6
+- 102.31 665.823 110.5 675 132 675 c 4
+- 149 675 165 665 165 644 c 4
+- 165 632 157.294 617.423 147 604 c 6
+- 45 471 l 5
++94 589 m 0
++ 90 589 84 585 67 585 c 0
++ 31 585 8 604 8 636 c 0
++ 8 670 32 693 67 693 c 0
++ 112 693 147 654 147 604 c 0
++ 147 544 102 483 35 450 c 1
++ 26 469 l 1
++ 80 506 108 543 108 575 c 0
++ 108 583 102 589 94 589 c 0
++165 644 m 1024
+ EndSplineSet
+ Validated: 1
+ EndChar
+diff --git a/sfd/FreeSerifBold.sfd b/sfd/FreeSerifBold.sfd
+index dc049fd..fbce637 100644
+--- a/sfd/FreeSerifBold.sfd
++++ b/sfd/FreeSerifBold.sfd
+@@ -127755,13 +127755,15 @@ VStem: 10 167
+ LayerCount: 2
+ Fore
+ SplineSet
+-10 471 m 1
+- 91 645 l 2
+- 100.748 665.939 117 675 136 675 c 0
+- 165 675 177 658.333 177 635 c 0
+- 177 612 172.999 601.639 152 576 c 2
+- 66 471 l 1
+- 10 471 l 1
++71 548 m 0
++ 28 548 2 572 2 609 c 0
++ 2 649 31 676 71 676 c 0
++ 122 676 161 632 161 577 c 0
++ 161 515 109 461 31 432 c 1
++ 17 455 l 1
++ 58 480 102 506.799804688 102 548 c 0
++ 102 550 101 552 98 552 c 0
++ 93 552 87 548 71 548 c 0
+ EndSplineSet
+ Validated: 3073
+ EndChar
+diff --git a/sfd/FreeSerifBoldItalic.sfd b/sfd/FreeSerifBoldItalic.sfd
+index 17f0629..bafb645 100644
+--- a/sfd/FreeSerifBoldItalic.sfd
++++ b/sfd/FreeSerifBoldItalic.sfd
+@@ -62517,13 +62517,15 @@ VStem: 10 167
+ LayerCount: 2
+ Fore
+ SplineSet
+-110 481 m 5
+- 211 655 l 6
+- 223 676 243 685 262 685 c 4
+- 288 685 303 668 303 645 c 4
+- 303 622 294 608 272 586 c 6
+- 166 481 l 5
+- 110 481 l 5
++226.296875 551.625 m 0
++ 196.77734375 551.625 173.631835938 569.418945312 173.631835938 597.985351562 c 0
++ 173.631835938 641.680664062 212.77734375 679.625 253.50390625 679.625 c 0
++ 297.028320312 679.625 325 647.580078125 325 604 c 0
++ 325 532.650390625 259.77734375 467.625 159.513671875 435.625 c 1
++ 150.403320312 458.625 l 1
++ 218.823242188 484.234375 257.420898438 533.9140625 257.420898438 552.736328125 c 0
++ 257.420898438 554.303710938 256.584960938 555.625 254.147460938 555.625 c 0
++ 249.147460938 555.625 242.296875 551.625 226.296875 551.625 c 0
+ EndSplineSet
+ Validated: 3073
+ EndChar
+diff --git a/sfd/FreeSerifItalic.sfd b/sfd/FreeSerifItalic.sfd
+index ed735a6..f285f7d 100644
+--- a/sfd/FreeSerifItalic.sfd
++++ b/sfd/FreeSerifItalic.sfd
+@@ -96480,16 +96480,7 @@ HStem: 461 204
+ VStem: 100 178
+ LayerCount: 2
+ Fore
+-SplineSet
+-135 461 m 5
+- 100 461 l 5
+- 198 631 l 6
+- 212 656 224 665 246 665 c 4
+- 263 665 278 655 278 634 c 4
+- 278 622 270 608 257 594 c 6
+- 135 461 l 5
+-EndSplineSet
+-Validated: 3073
++Refer: 12 44 N 1 0 0 1 166 561 2
+ EndChar
+ 
+ StartChar: ccaronapostrophe
+-- 
+2.17.1
+

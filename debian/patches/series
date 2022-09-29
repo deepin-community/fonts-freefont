@@ -1,0 +1,6 @@
+Makefile-disable-testff.patch
+reverse_floorleft_floorright.diff
+drop_bad_braille.diff
+interchange_glyphs.patch
+fix-the-appearance-of-the-Slovak-glyphs.patch
+build_python3_syntax.patch

@@ -1,0 +1,335 @@
+From: Andrej Shadura <andrewsh@debian.org>
+Subject: Place glyphs for U+2E2A U+2E2B U+2E2C into their proper locations
+Date: Thu, 08 Mar 2018 17:45:32 +0100
+
+diff --git a/sfd/FreeMono.sfd b/sfd/FreeMono.sfd
+index 6671e75..781b8a0 100644
+--- a/sfd/FreeMono.sfd
++++ b/sfd/FreeMono.sfd
+@@ -95300,8 +95300,8 @@ EndSplineSet
+ Validated: 3073
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 4156
++StartChar: uni2e2c
++Encoding: 11820 11820 4158
+ Width: 600
+ Flags: HMW
+ LayerCount: 2
+@@ -95313,8 +95313,8 @@ Refer: 118 183 S 1 0 0 1 170 222 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 4157
++StartChar: uni2e2a
++Encoding: 11818 11818 4156
+ Width: 600
+ Flags: HMW
+ LayerCount: 2
+@@ -95323,8 +95323,8 @@ Refer: 2787 8278 S 0 1 -1 0 582.5 -57.5 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 4158
++StartChar: uni2e2b
++Encoding: 11819 11819 4157
+ Width: 600
+ Flags: HMW
+ LayerCount: 2
+diff --git a/sfd/FreeMonoBold.sfd b/sfd/FreeMonoBold.sfd
+index 09b41bd..8c2bcec 100644
+--- a/sfd/FreeMonoBold.sfd
++++ b/sfd/FreeMonoBold.sfd
+@@ -45046,8 +45046,8 @@ Refer: 9 41 N 1 0 0 1 -40 0 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 2025
++StartChar: uni2e2c
++Encoding: 11820 11820 2027
+ Width: 600
+ Flags: HW
+ LayerCount: 2
+@@ -45059,8 +45059,8 @@ Refer: 118 183 N 1 0 0 1 -180 -182 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 2026
++StartChar: uni2e2a
++Encoding: 11818 11818 2025
+ Width: 600
+ Flags: HW
+ LayerCount: 2
+@@ -45069,8 +45069,8 @@ Refer: 1799 8278 S 0 1 -1 0 586.5 -57.5 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 2027
++StartChar: uni2e2b
++Encoding: 11819 11819 2026
+ Width: 600
+ Flags: HW
+ LayerCount: 2
+diff --git a/sfd/FreeMonoBoldOblique.sfd b/sfd/FreeMonoBoldOblique.sfd
+index 56bba98..58865de 100644
+--- a/sfd/FreeMonoBoldOblique.sfd
++++ b/sfd/FreeMonoBoldOblique.sfd
+@@ -40601,8 +40601,8 @@ Refer: 9 41 S 1 0 0 1 181 0 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 1787
++StartChar: uni2e2c
++Encoding: 11820 11820 1789
+ Width: 600
+ Flags: HW
+ LayerCount: 2
+@@ -40614,8 +40614,8 @@ Refer: 118 183 S 1 0 0 1 170 222 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 1788
++StartChar: uni2e2a
++Encoding: 11818 11818 1787
+ Width: 600
+ Flags: HW
+ LayerCount: 2
+@@ -40626,8 +40626,8 @@ Refer: 118 183 N 1 0 0 1 -213 158 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 1789
++StartChar: uni2e2b
++Encoding: 11819 11819 1788
+ Width: 600
+ Flags: HW
+ LayerCount: 2
+diff --git a/sfd/FreeMonoOblique.sfd b/sfd/FreeMonoOblique.sfd
+index 6b8c48b..b7adcad 100644
+--- a/sfd/FreeMonoOblique.sfd
++++ b/sfd/FreeMonoOblique.sfd
+@@ -53407,8 +53407,8 @@ Refer: 9 41 S 1 0 0 1 20 0 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 2245
++StartChar: uni2e2c
++Encoding: 11820 11820 2247
+ Width: 600
+ Flags: HMW
+ LayerCount: 2
+@@ -53420,8 +53420,8 @@ Refer: 118 183 N 1 0 0 1 -180 -182 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 2246
++StartChar: uni2e2a
++Encoding: 11818 11818 2245
+ Width: 600
+ Flags: HMW
+ LayerCount: 2
+@@ -53432,8 +53432,8 @@ Refer: 118 183 N 1 0 0 1 -57 -132 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 2247
++StartChar: uni2e2b
++Encoding: 11819 11819 2246
+ Width: 600
+ Flags: HMW
+ LayerCount: 2
+diff --git a/sfd/FreeSans.sfd b/sfd/FreeSans.sfd
+index c4dde39..682761a 100644
+--- a/sfd/FreeSans.sfd
++++ b/sfd/FreeSans.sfd
+@@ -193446,8 +193446,8 @@ Refer: 9 41 S 1 0 0 1 151 0 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 6215
++StartChar: uni2e2c
++Encoding: 11820 11820 6217
+ Width: 660
+ Flags: HMW
+ LayerCount: 2
+@@ -193459,8 +193459,8 @@ Refer: 118 183 S 1 0 0 1 436 262 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 6216
++StartChar: uni2e2a
++Encoding: 11818 11818 6215
+ Width: 623
+ Flags: HMW
+ LayerCount: 2
+@@ -193469,8 +193469,8 @@ Refer: 2657 8278 S 0 1 -1 0 602.5 22.5 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 6217
++StartChar: uni2e2b
++Encoding: 11819 11819 6216
+ Width: 623
+ Flags: HMW
+ LayerCount: 2
+diff --git a/sfd/FreeSansBold.sfd b/sfd/FreeSansBold.sfd
+index 2243624..80d108f 100644
+--- a/sfd/FreeSansBold.sfd
++++ b/sfd/FreeSansBold.sfd
+@@ -52288,8 +52288,8 @@ Refer: 9 41 N 1 0 0 1 0 0 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 2645
++StartChar: uni2e2c
++Encoding: 11820 11820 2647
+ Width: 660
+ Flags: HW
+ LayerCount: 2
+@@ -52301,8 +52301,8 @@ Refer: 116 183 S 1 0 0 1 -35 -165.7 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 2646
++StartChar: uni2e2a
++Encoding: 11818 11818 2645
+ Width: 623
+ Flags: HW
+ LayerCount: 2
+@@ -52311,8 +52311,8 @@ Refer: 1854 8278 S 0 1 -1 0 576.5 22.5 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 2647
++StartChar: uni2e2b
++Encoding: 11819 11819 2646
+ Width: 623
+ Flags: HW
+ LayerCount: 2
+diff --git a/sfd/FreeSansBoldOblique.sfd b/sfd/FreeSansBoldOblique.sfd
+index 691683e..de8984c 100644
+--- a/sfd/FreeSansBoldOblique.sfd
++++ b/sfd/FreeSansBoldOblique.sfd
+@@ -46080,8 +46080,8 @@ Refer: 9 41 S 1 0 0 1 171 0 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 2392
++StartChar: uni2e2c
++Encoding: 11820 11820 2394
+ Width: 660
+ Flags: HW
+ LayerCount: 2
+@@ -46094,7 +46094,7 @@ Validated: 32769
+ EndChar
+ 
+ StartChar: uni2e2b
+-Encoding: 11819 11819 2393
++Encoding: 11818 11818 2392
+ Width: 660
+ Flags: HW
+ LayerCount: 2
+@@ -46105,8 +46105,8 @@ Refer: 116 183 S 1 0 0 1 155 -124 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 2394
++StartChar: uni2e2a
++Encoding: 11819 11819 2393
+ Width: 660
+ Flags: HW
+ LayerCount: 2
+diff --git a/sfd/FreeSansOblique.sfd b/sfd/FreeSansOblique.sfd
+index 3879ccf..498c241 100644
+--- a/sfd/FreeSansOblique.sfd
++++ b/sfd/FreeSansOblique.sfd
+@@ -76021,8 +76021,8 @@ Refer: 9 41 S 1 0 0 1 -30 0 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 3026
++StartChar: uni2e2c
++Encoding: 11820 11820 3028
+ Width: 660
+ Flags: HW
+ LayerCount: 2
+@@ -76034,8 +76034,8 @@ Refer: 116 183 S 1 0 0 1 -135 -212 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 3027
++StartChar: uni2e2a
++Encoding: 11818 11818 3026
+ Width: 623
+ Flags: HW
+ LayerCount: 2
+@@ -76046,8 +76046,8 @@ Refer: 116 183 S 1 0 0 1 -113 138 2
+ Validated: 32769
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 3028
++StartChar: uni2e2b
++Encoding: 11819 11819 3029
+ Width: 623
+ Flags: HW
+ LayerCount: 2
+diff --git a/sfd/FreeSerif.sfd b/sfd/FreeSerif.sfd
+index 226053d..669425c 100644
+--- a/sfd/FreeSerif.sfd
++++ b/sfd/FreeSerif.sfd
+@@ -326547,8 +326547,8 @@ Refer: 504 830 S 1 0 0 1 381 0 2
+ Validated: 1
+ EndChar
+ 
+-StartChar: uni2e2a
+-Encoding: 11818 11818 9651
++StartChar: uni2e2c
++Encoding: 11820 11820 9653
+ Width: 620
+ Flags: MW
+ LayerCount: 2
+@@ -326560,8 +326560,8 @@ Refer: 116 183 N 1 0 0 1 -65 -182 2
+ Validated: 1
+ EndChar
+ 
+-StartChar: uni2e2b
+-Encoding: 11819 11819 9652
++StartChar: uni2e2a
++Encoding: 11818 11818 9651
+ Width: 410
+ Flags: HMW
+ LayerCount: 2
+@@ -326570,8 +326570,8 @@ Refer: 4050 8278 N 0 1 -1 0 492.5 82.5 2
+ Validated: 1
+ EndChar
+ 
+-StartChar: uni2e2c
+-Encoding: 11820 11820 9653
++StartChar: uni2e2b
++Encoding: 11819 11819 9652
+ Width: 410
+ Flags: HMW
+ LayerCount: 2

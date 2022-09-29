@@ -1,0 +1,36 @@
+Source: fonts-freefont
+Section: fonts
+Priority: optional
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 11~)
+Build-Depends-Indep: fontforge-nox | fontforge
+Standards-Version: 4.1.4
+Uploaders: Davide Viti <zinosat@tiscali.it>, Fabian Greffrath <fabian@debian.org>
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-freefont.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-freefont
+Homepage: http://savannah.gnu.org/projects/freefont/
+
+Package: fonts-freefont-ttf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Freefont Serif, Sans and Mono Truetype fonts
+ Freefont is a set of free high-quality TrueType fonts covering the UCS
+ character set. These fonts are similar to the widely known Helvetica,
+ Times and Courier fonts.
+
+Package: fonts-freefont-otf
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: Freefont Serif, Sans and Mono OpenType fonts
+ Freefont is a set of free high-quality OpenType fonts covering the UCS
+ character set. These fonts are similar to the widely known Helvetica,
+ Times and Courier fonts.
+
+Package: fonts-freefont-udeb
+Section: debian-installer
+Provides: ttf-installer
+Package-Type: udeb
+Architecture: all
+Description: Freefont Sans fonts for the graphical installer
